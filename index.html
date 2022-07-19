@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <body>
+<body>
     <h1>
-      <span class="text">
-        <span class="magic-text">Vanguard</span>
-      </span>
-    </h1>
-  </body>
+        <span class="text">
+          <span class="magic-text">Vanguard</span>
+        </span>
+      </h1>
+</body>
 </html>
 
 <style>
-  :root {
-    --purple: rgb(247, 74, 74);
-    --violet: rgb(231, 100, 100);
-    --pink: rgb(204, 58, 102);
-  }
+    :root {  
+  --colorOne: rgb(74, 192, 247);
+  --colorTwo: rgb(84, 174, 177);
+  --colorThree: rgb(121, 58, 204);
 
-  @keyframes background-pan {
-    from {
-      background-position: 0% center;
-    }
+}
 
-    to {
-      background-position: -200% center;
-    }
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
   }
+  
+  to {
+    background-position: -200% center;
+  }
+}
 
-  h1 {
-    color: white;
-    font-family: 'Ambit';
-    font-size: 80px;
-    font-weight: 700;
-    margin: 0px;
-    text-align: left;
-  }
+h1 {
+  color: white;
+  font-family: 'Ambit';
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0px;
+  text-align: left;
+}
 
-  h1 > .text {
-    display: inline-block;
-    position: relative;
-  }
+h1 > .text {
+  display: inline-block;
+  position: relative;
+}
 
-  h1 > .text > .magic-text {
-    animation: background-pan 3s linear infinite;
-    background: linear-gradient(
-      to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
-    );
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-  }
+
+h1 > .text > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--colorOne),
+    var(--colorTwo),
+    var(--colorThree),
+    var(--colorOne)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
 </style>
